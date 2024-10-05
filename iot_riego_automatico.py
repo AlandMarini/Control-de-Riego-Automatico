@@ -8,11 +8,10 @@ app = Flask(__name__)
 
 # Configuración de la base de datos MySQL
 db_config = {
-    'host': 'mysql.railway.internal',
-    'user': 'root',
-    'password': 'TPsglWJQAXtGtYzCoIvCSyTTColdkibX',
-    'database': 'railway',  
-    'port': 3306
+    'host': 'climatic.com.ar',
+    'user': 'u588746708_alan',
+    'password': 'Barcito2024',
+    'database': 'u588746708_alan',  
 }
 
 # Función para conectarse a MySQL
@@ -22,8 +21,7 @@ def connect_to_db():
             host=db_config['host'],
             user=db_config['user'],
             password=db_config['password'],
-            database=db_config['database'],
-            port=db_config['port']  
+            database=db_config['database']
         )
         if connection.is_connected():
             return connection
