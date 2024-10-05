@@ -3,15 +3,16 @@ import mysql.connector
 from mysql.connector import Error
 import os
 
+
 app = Flask(__name__)
 
 # Configuración de la base de datos MySQL
 db_config = {
-    'host': 'localhost',
+    'host': 'mysql.railway.internal',
     'user': 'root',
-    'password': 'root',
-    'database': 'iot_riego',  
-    'port': 3308
+    'password': 'TPsglWJQAXtGtYzCoIvCSyTTColdkibX',
+    'database': 'railway',  
+    'port': 3306
 }
 
 # Función para conectarse a MySQL
